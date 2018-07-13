@@ -4,6 +4,7 @@ class ArtistsController < ApplicationController
   end
 
   def show
+    binding.pry
     @artist = Artist.find_by_id(params[:id])
     if @artist == nil
       flash[:notice] = "Artist not found"
