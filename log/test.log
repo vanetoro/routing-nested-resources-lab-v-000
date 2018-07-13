@@ -12447,3 +12447,7 @@ Redirected to http://www.example.com/artists
 Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
 Started GET "/artists" for 127.0.0.1 at 2018-07-13 19:50:40 +0000
 Processing by ArtistsController#index as HTML
+  [1m[35mArtist Load (0.2ms)[0m  SELECT "artists".* FROM "artists"
+  Rendered artists/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1150ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
