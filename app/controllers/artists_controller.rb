@@ -5,9 +5,7 @@ class ArtistsController < ApplicationController
 
   def show
     @artist = Artist.find_by_id(params[:id])
-    binding.pry
     if @artist == nil
-      
       flash[:notice] = "Artist not found"
       redirect_to artists_path
     end 
