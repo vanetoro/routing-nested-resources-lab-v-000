@@ -8,7 +8,7 @@ class ArtistsController < ApplicationController
     if @artist == nil
       flash[:notice] = "Artist not found"
       redirect_to artists_path
-    end 
+    end
   end
 
   def new
@@ -27,6 +27,7 @@ class ArtistsController < ApplicationController
 
   def edit
     @artist = Artist.find(params[:id])
+    binding.pry
   end
 
   def update
